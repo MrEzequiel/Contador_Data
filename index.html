@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador</title>
+    <link rel="shortcut icon" href="./assets/timer.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="content1" class="show">
+      <h1>Contador</h1>
+      <br />
+      <h3>Informe uma data</h3>
+      <form>
+        <input
+          type="date"
+          id="timer-start"
+          placeholder="Horas/Minutos/Segundos"
+        />
+        <div>
+          <button type="button" id="start">Iniciar Contagem</button>
+        </div>
+        <div id="error"></div>
+      </form>
+    </div>
+
+    <header id="header">
+      <section class="title">
+        <h2>Contador</h2>
+      </section>
+      <div class="btn-retry">
+        <button type="button" id="retry">Reiniciar</button>
+      </div class="btn-retry">
+    </header>
+
+    <div id="content2">
+      <h1>Faltam</h1>
+      <br />
+      <div id="time">
+        <div id="time-days"></div>
+        <div id="time-hours"></div>
+        <div id="time-minutes"></div>
+        <div id="time-seconds"></div>
+      </div>
+    </div>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <h2>Você realmente quer reiniciar o <span>contador?</span></h2>
+        <p><strong>Irá perder o tempo atual!</strong></p>
+        <div class="modal-buttons">
+          <button type="button" class="btn-no">NÃO</button>
+          <button type="button" class="btn-yes">SIM</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

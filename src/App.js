@@ -63,7 +63,7 @@ const App = {
     ]
     let day1 = new Date(data[3])
     let day2 = new Date(App.getDateInputUser())
-    if (day1 >= day2) {
+    if (day1 >= day2 || day2 == 'Invalid Date') {
       return 0
     }
     let difference = Math.abs(day2 - day1)

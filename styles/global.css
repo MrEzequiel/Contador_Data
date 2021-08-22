@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: 63.5%;
+
+  --number-font: 'Anonymous Pro', monospace;
+  /* cores */
+}
+
+body {
+  height: 100vh;
+  font: 400 1.6rem 'Open Sans', sans-serif;
+  background: linear-gradient(45deg, black, #011f26);
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}

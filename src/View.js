@@ -1,17 +1,19 @@
 const View = {
   render({ days, hours, minutes, seconds }) {
-    document.getElementById('time-minutes').innerHTML = `
-    <span>${minutes}</span><p>Minutos</p>
-    `
-    document.getElementById('time-seconds').innerHTML = `
-    <span>${seconds}</span><p>Segundos</p>
-    `
-    document.getElementById('time-hours').innerHTML = `
-    <span>${hours}</span><p>Horas</p>
-    `
-    document.getElementById('time-days').innerHTML = `
-    <span>${days}</span><p>Dias</p>
-    `
+    document.querySelector('#time-seconds span').innerHTML = `${seconds}`
+
+    document.querySelector('#time-minutes span').innerHTML = `${minutes}`
+
+    document.querySelector('#time-hours span').innerHTML = `${hours}`
+
+    document.querySelector('#time-days span').innerHTML = `${days}`
+  },
+  renderError(text) {
+    document.querySelector('#timer-start').classList.add('error')
+    const message = document.querySelector('.message-error')
+
+    message.innerHTML = `${text}`
+    message.classList.add('show')
   }
 }
 

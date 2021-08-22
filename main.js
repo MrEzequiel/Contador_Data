@@ -1,3 +1,3 @@
-import { App } from './src/App.js'
+import { Validate } from './src/Validate.js'
 
-window.addEventListener('load', App.start())
+document.querySelector('#form').addEventListener('submit', Validate.form)

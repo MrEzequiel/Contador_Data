@@ -18,6 +18,7 @@ const Timer = {
 
     Timer.interval = setInterval(Timer.countdown, 1000)
   },
+
   countdown() {
     Timer.currentTime--
 
@@ -37,10 +38,6 @@ const Timer = {
       hours,
       minutes,
       seconds
-    })
-
-    document.querySelector('#retry').addEventListener('click', () => {
-      return
     })
 
     if (Timer.currentTime === 0) {
